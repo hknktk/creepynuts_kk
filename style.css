@@ -61,6 +61,7 @@ header {
   padding: 8px;
   color: #fff;
   font-family: 'Reggae One', cursive;
+  white-space: nowrap;
 }
 
 .hero__img .subtitle span:first-child {
