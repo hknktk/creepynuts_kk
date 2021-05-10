@@ -51,14 +51,14 @@ header {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 90%;
+  width: 95%;
 }
 
 .hero__img .subtitle span {
   display: inline-block;
   background-color: #333;
-  font-size: 3rem;
-  padding: 8px;
+  font-size: 2.6rem;
+  padding: 8px 16px;
   color: #fff;
   font-family: 'Reggae One', cursive;
   white-space: nowrap;
