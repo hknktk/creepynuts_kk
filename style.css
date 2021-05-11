@@ -29,6 +29,29 @@ header {
   z-index: 3;
 }
 
+.menu__button.active .menu__button--bar {
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.menu__button.active .menu__button--bar:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu__button.active .menu__button--bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu__button.active .menu__button--bar:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.menu__button.active .menu__button--text {
+  opacity: 0;
+}
+
 .menu__button--bar {
   position: absolute;
   top: 40%;
@@ -36,7 +59,7 @@ header {
   display: block;
   width: 50%;
   height: 4px;
-  background-color: #fff;
+  background-color: #df3131;
 }
 
 .menu__button--bar:nth-child(1) {
@@ -55,7 +78,7 @@ header {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   bottom: 10px;
-  color: #fff;
+  color: #df3131;
   font-size: 1.4rem;
   font-weight: 600;
 }

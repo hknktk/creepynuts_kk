@@ -6,6 +6,6 @@ let mySwiper = new Swiper ('.swiper-container', {
   effect: 'coverflow',
   speed:1500,
   autoplay: {
-      delay: 3000,
+      delay: 1500,
   },
 })
