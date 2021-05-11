@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+  <link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Creepy Nuts</title>
 </head>
@@ -16,24 +17,40 @@
       <h1 class="main__title--inner">Creepy Nuts</h1>
     </div>
 
-    <div class="hero__img">
-      <img src="./imges/top.png" alt="">
-
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./imges/top.png" alt=""></div>
+          <div class="swiper-slide"><img src="./imges/sub1.png" alt=""></div>
+          <div class="swiper-slide"><img src="./imges/sub2.png" alt=""></div>
+      </div>
       <div class="subtitle">
         <span>日本一と世界一が組む</span>
         <span>HIPHOPユニット</span>
       </div>
-      
-    </div>
-    
+  </div>
+
   </header>
+
+  <nav class="menu__button js-menu__button">
+    <span class="menu__button--bar"></span>
+    <span class="menu__button--bar"></span>
+    <span class="menu__button--bar"></span>
+    <p class="menu__button--text">MENU</p>
+  </nav>
+
+  <div class="menu js-menu">
+    <ul class="menu__list">
+      <li><a href="">メンバー<span>Member</span></a></li>
+      <li><a href="">魅力<span>Charm</span></a></li>
+      <li><a href="">楽曲<span>Music</span></a></li>
+      <li><a href="">フリースタイル<span>Free Style</span></a></li>
+    </ul>
+  </div>
 
 
   <div class="container">
     <div class="block">
-      <h2 class="block__title">
-        Member
-      </h2>
+      <h2 class="block__title">メンバー</h2>
 
       <div class="block__inner">
 
@@ -44,7 +61,7 @@
               <img src="./imges/rsitei.png" alt="">
               <h3 class="subname">日本一のラッパー</h3>
             </div>
-            <div class="person__text">Creepy Nutsのボーカル。</div>
+            <div class="person__text">Creepy NutsのMC。ラッパーとしては、フリースタイルの腕を競うUMB全国大会で前人未踏の3連覇を果たした。楽曲においてもかなりハイテンポな曲でも聴き取りやすい歌声が特徴。</div>
           </div>
         </div>
 
@@ -55,13 +72,18 @@
               <img src="./imges/matsunaga.png" alt="">
               <h3 class="subname">世界一のDJ</h3>
             </div>
-            <div class="person__text"></div>
+            <div class="person__text">Creepy NutsのDJ。DJとして楽曲におけるメロディ作成はもちろん、個人ではターンテーブルの技を競う世界大会DMCにおいて優勝を果たし世界一のDJとなった。</div>
           </div>
         </div>
 
       </div>
 
     </div>
+
+    <div class="block">
+      <h2 class="block__title">Creepy Nutsのココがすごい！</h2>
+
+      </div>
   </div>
 
 
@@ -70,6 +92,8 @@
 
 
 
+  <script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="slider.js"></script>
   <script src="main.js"></script>
 </body>
 
