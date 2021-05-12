@@ -500,6 +500,7 @@ header {
   font-family: "Reggae One", cursive;
   margin-bottom: 16px;
   font-weight: 800;
+  letter-spacing: 1px;
 }
 
 .box__text {
@@ -517,8 +518,7 @@ header {
 .box__text p span {
   padding: 2px;
   font-weight: 800;
-  font-size: 1.9rem;
-  text-shadow: 0px 0px 10px #333;
-  border-bottom: 3px double #333;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 1px #570a0a;
 }
 /*# sourceMappingURL=style.css.map */
