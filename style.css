@@ -435,77 +435,77 @@ header {
 }
 
 .box:nth-of-type(1) .box__title::before {
-  content: "1.";
+  content: "1,";
   font-family: "Reggae One", cursive;
   color: snow;
-  margin-right: 4px;
+  margin-right: 1px;
 }
 
 .box:nth-of-type(2) .box__title::before {
-  content: "2.";
+  content: "2,";
   font-family: "Reggae One", cursive;
   color: snow;
-  margin-right: 4px;
+  margin-right: 1px;
 }
 
 .box:nth-of-type(3) .box__title::before {
-  content: "3.";
+  content: "3,";
   font-family: "Reggae One", cursive;
   color: snow;
-  margin-right: 4px;
+  margin-right: 1px;
 }
 
 .box:nth-of-type(4) .box__title::before {
-  content: "4.";
+  content: "4,";
   font-family: "Reggae One", cursive;
   color: snow;
-  margin-right: 4px;
+  margin-right: 1px;
 }
 
 .box:nth-of-type(5) .box__title::before {
-  content: "5.";
+  content: "5,";
   font-family: "Reggae One", cursive;
   color: snow;
-  margin-right: 4px;
+  margin-right: 1px;
 }
 
 .box:nth-of-type(6) .box__title::before {
-  content: "6.";
+  content: "6,";
   font-family: "Reggae One", cursive;
   color: snow;
-  margin-right: 4px;
+  margin-right: 1px;
 }
 
 .box:nth-of-type(7) .box__title::before {
-  content: "7.";
+  content: "7,";
   font-family: "Reggae One", cursive;
   color: snow;
-  margin-right: 4px;
+  margin-right: 1px;
 }
 
 .box:nth-of-type(8) .box__title::before {
-  content: "8.";
+  content: "8,";
   font-family: "Reggae One", cursive;
   color: snow;
-  margin-right: 4px;
+  margin-right: 1px;
 }
 
 .box:nth-of-type(9) .box__title::before {
-  content: "9.";
+  content: "9,";
   font-family: "Reggae One", cursive;
   color: snow;
-  margin-right: 4px;
+  margin-right: 1px;
 }
 
 .box:nth-of-type(10) .box__title::before {
-  content: "10.";
+  content: "10,";
   font-family: "Reggae One", cursive;
   color: snow;
-  margin-right: 4px;
+  margin-right: 1px;
 }
 
 .box__title {
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   color: snow;
   font-family: "Reggae One", cursive;
   margin-bottom: 16px;
@@ -569,5 +569,9 @@ header {
 .box__text--lyrics .comment {
   font-size: 1.4rem;
   color: #df3131;
+}
+
+.box__text--lyrics .skyblue {
+  color: #47cdd6;
 }
 /*# sourceMappingURL=style.css.map */
