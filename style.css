@@ -524,6 +524,7 @@ header {
   text-align: justify;
   color: snow;
   margin-bottom: 24px;
+  font-weight: 700;
 }
 
 .box__text > p span {
