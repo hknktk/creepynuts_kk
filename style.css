@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -14,6 +15,7 @@ body {
   min-height: 100vh;
   background-color: #3d3838;
   overflow-x: hidden;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 header {
@@ -24,19 +26,20 @@ header {
   position: fixed;
   right: 0px;
   top: 0px;
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
   z-index: 3;
 }
 
 .menu__button.active .menu__button--bar {
-  -webkit-transition: .6s;
-  transition: .6s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .menu__button.active .menu__button--bar:nth-child(1) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  background-color: #fff;
 }
 
 .menu__button.active .menu__button--bar:nth-child(2) {
@@ -46,6 +49,7 @@ header {
 .menu__button.active .menu__button--bar:nth-child(3) {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  background-color: #fff;
 }
 
 .menu__button.active .menu__button--text {
@@ -58,7 +62,7 @@ header {
   left: 25%;
   display: block;
   width: 50%;
-  height: 4px;
+  height: 3px;
   background-color: #df3131;
 }
 
@@ -77,10 +81,10 @@ header {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 10px;
+  bottom: 2px;
   color: #df3131;
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .menu {
@@ -93,19 +97,19 @@ header {
   z-index: 2;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity .6s;
-  transition: opacity .6s;
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
 }
 
 .menu.show {
-  opacity: 1;
+  opacity: 0.95;
   visibility: visible;
 }
 
 .menu.show .menu__list li {
   opacity: 1;
-  -webkit-transition-delay: .6s;
-          transition-delay: .6s;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
 }
 
 .menu.show .menu__list li:nth-child(1) {
@@ -134,7 +138,7 @@ header {
 }
 
 .menu__list {
-  color: #fff;
+  color: snow;
   padding: 48px;
 }
 
@@ -143,8 +147,8 @@ header {
   line-height: 1.5;
   margin-bottom: 24px;
   opacity: 0;
-  -webkit-transition: .1s;
-  transition: .1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .menu__list li::before {
@@ -154,21 +158,21 @@ header {
   content: "";
   width: 10px;
   height: 10px;
-  background-color: #fff;
+  background-color: snow;
 }
 
 .menu__list li a {
-  color: #fff;
+  color: snow;
   text-decoration: none;
   font-size: 3rem;
-  font-family: 'Reggae One', cursive;
+  font-family: "Reggae One", cursive;
 }
 
 .menu__list li a span {
   display: block;
   font-size: 1.6rem;
   padding-left: 8px;
-  font-family: 'Paytone One', sans-serif;
+  font-family: "Paytone One", sans-serif;
 }
 
 .menu__list li a span::before {
@@ -186,7 +190,7 @@ header {
 .main__title--inner {
   color: #df3131;
   font-size: 4rem;
-  font-family: 'Paytone One', sans-serif;
+  font-family: "Paytone One", sans-serif;
 }
 
 .swiper-container {
@@ -205,6 +209,34 @@ header {
 .swiper-container .swiper-wrapper img {
   width: 100%;
   height: 100%;
+  -webkit-animation: scaleDown 2s;
+          animation: scaleDown 2s;
+}
+
+@-webkit-keyframes scaleDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes scaleDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 .subtitle {
@@ -222,11 +254,11 @@ header {
   background-color: #333;
   font-size: 2.6rem;
   padding: 8px 16px;
-  color: #fff;
-  font-family: 'Reggae One', cursive;
+  color: snow;
+  font-family: "Reggae One", cursive;
   white-space: nowrap;
-  -webkit-animation: slidein .7s;
-          animation: slidein .7s;
+  -webkit-animation: slidein 0.7s;
+          animation: slidein 0.7s;
 }
 
 .subtitle span:first-child {
@@ -278,17 +310,18 @@ header {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 160px;
+  padding-top: 20px;
 }
 
 .block__title {
   position: relative;
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   color: #df3131;
-  font-weight: 800;
-  margin-bottom: 24px;
+  font-weight: 900;
+  margin-bottom: 48px;
   padding-left: 8px;
   text-align: center;
-  font-family: 'Reggae One', cursive;
+  font-family: "Reggae One", cursive;
   white-space: nowrap;
 }
 
@@ -314,14 +347,15 @@ header {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  min-height: 1000px;
 }
 
 .block__person--box {
   width: 90%;
   min-height: 400px;
-  background-color: #fff;
   padding: 16px;
+  margin-bottom: 24px;
+  -webkit-box-shadow: 0px 0px 10px #575353;
+          box-shadow: 0px 0px 10px #575353;
 }
 
 .block__person--box:first-child {
@@ -334,9 +368,9 @@ header {
 
 .person__name {
   font-size: 2.2rem;
-  font-family: 'Reggae One', cursive;
+  font-family: "Reggae One", cursive;
   margin-bottom: 8px;
-  color: #2c2828;
+  color: snow;
   text-align: center;
 }
 
@@ -351,6 +385,7 @@ header {
   height: 100%;
   position: relative;
   margin-bottom: 16px;
+  border-radius: 10px;
 }
 
 .person__img img {
@@ -368,14 +403,122 @@ header {
   font-size: 2.2rem;
   font-weight: 600;
   white-space: nowrap;
-  font-family: 'Reggae One', cursive;
+  font-family: "Reggae One", cursive;
 }
 
 .person__text {
   padding: 8px;
+}
+
+.person__text p {
   font-size: 1.6rem;
   line-height: 1.5;
   letter-spacing: 1px;
   text-align: justify;
+  color: snow;
+}
+
+.box {
+  background-color: #df3131;
+  padding: 24px;
+  margin-bottom: 40px;
+}
+
+.box:nth-of-type(1) .box__title::before {
+  content: "1.";
+  font-family: "Reggae One", cursive;
+  color: snow;
+  margin-right: 4px;
+}
+
+.box:nth-of-type(2) .box__title::before {
+  content: "2.";
+  font-family: "Reggae One", cursive;
+  color: snow;
+  margin-right: 4px;
+}
+
+.box:nth-of-type(3) .box__title::before {
+  content: "3.";
+  font-family: "Reggae One", cursive;
+  color: snow;
+  margin-right: 4px;
+}
+
+.box:nth-of-type(4) .box__title::before {
+  content: "4.";
+  font-family: "Reggae One", cursive;
+  color: snow;
+  margin-right: 4px;
+}
+
+.box:nth-of-type(5) .box__title::before {
+  content: "5.";
+  font-family: "Reggae One", cursive;
+  color: snow;
+  margin-right: 4px;
+}
+
+.box:nth-of-type(6) .box__title::before {
+  content: "6.";
+  font-family: "Reggae One", cursive;
+  color: snow;
+  margin-right: 4px;
+}
+
+.box:nth-of-type(7) .box__title::before {
+  content: "7.";
+  font-family: "Reggae One", cursive;
+  color: snow;
+  margin-right: 4px;
+}
+
+.box:nth-of-type(8) .box__title::before {
+  content: "8.";
+  font-family: "Reggae One", cursive;
+  color: snow;
+  margin-right: 4px;
+}
+
+.box:nth-of-type(9) .box__title::before {
+  content: "9.";
+  font-family: "Reggae One", cursive;
+  color: snow;
+  margin-right: 4px;
+}
+
+.box:nth-of-type(10) .box__title::before {
+  content: "10.";
+  font-family: "Reggae One", cursive;
+  color: snow;
+  margin-right: 4px;
+}
+
+.box__title {
+  font-size: 2rem;
+  color: snow;
+  font-family: "Reggae One", cursive;
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+
+.box__text {
+  padding: 8px;
+}
+
+.box__text p {
+  font-size: 1.7rem;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+  text-align: justify;
+  color: snow;
+}
+
+.box__text p span {
+  padding: 2px;
+  font-weight: 800;
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 2px #333;
+  border-bottom: 3px double #333;
 }
 /*# sourceMappingURL=style.css.map */
