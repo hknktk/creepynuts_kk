@@ -506,7 +506,7 @@ header {
 }
 
 .box__title {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   color: snow;
   font-family: "Reggae One", cursive;
   margin-bottom: 16px;
@@ -521,7 +521,7 @@ header {
 .box__text > p {
   font-size: 1.7rem;
   line-height: 1.6;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
   text-align: justify;
   color: snow;
   margin-bottom: 24px;
@@ -560,7 +560,7 @@ header {
 }
 
 .box__text--lyrics-text p {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   line-height: 1.6;
 }
 
@@ -571,10 +571,11 @@ header {
 
 .box__text--lyrics .comment {
   font-size: 1.4rem;
-  color: #df3131;
+  line-height: 1.5;
+  text-align: justify;
 }
 
-.box__text--lyrics .skyblue {
-  color: #47cdd6;
+.box__text--lyrics .pink {
+  color: #d6479f;
 }
 /*# sourceMappingURL=style.css.map */
