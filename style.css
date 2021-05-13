@@ -587,6 +587,7 @@ header {
 }
 
 .box__text--lyrics .pink {
-  color: #d6479f;
+  color: #1b1a1a;
+  border-bottom: 2px solid #d6479f;
 }
 /*# sourceMappingURL=style.css.map */
