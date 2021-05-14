@@ -298,7 +298,7 @@ header {
   .musicVideo{
     position: relative;
     width: 90%;
-    max-width: 900px;
+    max-width: 600px;
     height: 200px;
     margin: 0 auto;
     margin-bottom: 24px;
@@ -306,6 +306,7 @@ header {
 
     @media screen and (min-width:600px){
       height: 350px;
+      width: 70%;
     }
   }
 
