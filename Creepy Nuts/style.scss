@@ -176,6 +176,11 @@ header {
     @media screen and (min-width:600px){
       font-size: 5rem;
     }
+
+    
+    @media screen and (min-width:1000px){
+      font-size: 5.5rem;
+    }
   }
 }
 
@@ -292,6 +297,11 @@ header {
     @media screen and (min-width:600px){
       font-size: 3rem;
     }
+
+    
+    @media screen and (min-width:1000px){
+      font-size: 5rem;
+    }
     
 
     &::after {
@@ -318,7 +328,11 @@ header {
 
     @media screen and (min-width:600px){
       height: 350px;
-      width: 70%;
+      width: 90%;
+    }
+
+    @media screen and (min-width:1000px){
+      width: 80%;  
     }
   }
 
@@ -327,10 +341,10 @@ header {
     flex-direction: column;
     justify-content: space-around;
 
-    @media screen and (min-width:600px) {
-
+    @media screen and (min-width:1000px){
       flex-direction: row;
       flex-wrap: wrap;
+
     }
 
   }
@@ -343,9 +357,11 @@ header {
     margin-bottom: 24px;
     box-shadow: 0px 0px 10px rgb(87, 83, 83);
 
-    @media screen and (min-width:600px){
-      width: 45%;
+    
+    @media screen and (min-width:1000px){
+      width: 40%;
     }
+
 
 
     &:first-child {
@@ -375,6 +391,7 @@ header {
   width: 100%;
   min-height: 350px;
   padding: 8px;
+
 }
 
 .person__img {
@@ -383,13 +400,20 @@ header {
   height: 200px;
   margin-bottom: 16px;
   border-radius: 10px;
-  overflow: hidden;
+  
 
   @media screen and (min-width:600px){
-    width: 80%;
-    margin: 0 auto;
-    height: 250px;
+    width: 100%;
+    height: 200px;
   }
+
+  @media screen and (min-width:1000px){
+    width: 80%;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  
 
     &.inview {
 
@@ -404,9 +428,6 @@ header {
         $fill-mode: none
       );
   
-      &:hover {
-        transform: scale(1.05);
-      }
 
 
     }
@@ -431,8 +452,14 @@ header {
     
   
     @media screen and (min-width:600px){
-      font-size: 2.8rem;
+      font-size: 2.5rem;
     }
+  
+    @media screen and (min-width:1000px){
+      font-size: 3rem;
+    }
+
+
   }
 }
 
@@ -463,7 +490,18 @@ header {
     @media screen and (min-width:600px){
       font-size: 1.8rem;
     }
+
+    @media screen and (min-width:1000px){
+      font-size: 2rem;
+    }
     
+    
+  }
+
+  
+  @media screen and (min-width:1000px){
+      width: 90%;
+      margin: 0 auto;
   }
 }
 
@@ -471,6 +509,14 @@ header {
   background-color: $cRed;
   padding: 24px;
   margin-bottom: 40px;
+
+  
+  @media screen and (min-width:1000px){
+    width: 60%;
+    margin: 0 auto;
+    padding: 24px;
+    margin-bottom: 40px;
+  }
 
   @for $i from 1 through 10 {
     &:nth-of-type(#{$i}) {
@@ -492,6 +538,12 @@ header {
     margin-bottom: 8px;
     font-weight: 800;
     opacity: 0;
+
+    
+    @media screen and (min-width:1000px){
+      text-align: center;
+      font-size: 4rem;
+    }
 
 
     &.inview {
@@ -562,9 +614,27 @@ header {
         line-height: 2;
         font-size: 1.8rem;
         background-color: rgb(63, 8, 8);
+
+        
+    @media screen and (min-width:600px){
+      font-size: 2rem;
+    }
+    @media screen and (min-width:600px){
+      font-size: 2.3rem;
+    }
         
       }
 
+      
+    @media screen and (min-width:600px){
+      padding: 16px;
+      font-size: 1.8rem;
+    }
+      
+    @media screen and (min-width:1000px){
+      padding: 16px;
+      font-size: 2rem;
+    }
       
     }
 
@@ -593,6 +663,10 @@ header {
         p{
           font-size: 1.6rem;
           line-height: 1.6;
+
+          @media screen and (min-width:1000px){
+            font-size: 2.3rem;
+          }
 
           span{
             color: $cRed;
