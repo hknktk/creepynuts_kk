@@ -222,6 +222,11 @@ header {
   width: 95%;
   z-index: 2;
 
+  @media screen and (min-width:600px){
+      display: flex;
+      flex-direction: column;
+  }
+
   span {
     display: inline-block;
     background-color: $cBlack;
@@ -231,6 +236,13 @@ header {
     font-family: "Reggae One", cursive;
     white-space: nowrap;
     animation: slidein 0.7s;
+
+    @media screen and (min-width:600px){
+     font-size: 3rem;
+     width: 60%;
+    }
+
+    
 
     &:first-child {
       margin-bottom: 8px;
