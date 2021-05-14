@@ -265,6 +265,18 @@ header {
   z-index: 2;
 }
 
+@media screen and (min-width: 600px) {
+  .subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .subtitle span {
   display: inline-block;
   background-color: #1b1a1a;
@@ -275,6 +287,13 @@ header {
   white-space: nowrap;
   -webkit-animation: slidein 0.7s;
           animation: slidein 0.7s;
+}
+
+@media screen and (min-width: 600px) {
+  .subtitle span {
+    font-size: 3rem;
+    width: 60%;
+  }
 }
 
 .subtitle span:first-child {
