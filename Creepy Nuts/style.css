@@ -469,11 +469,19 @@ header {
   overflow: hidden;
 }
 
+@media screen and (min-width: 600px) {
+  .person__img {
+    width: 80%;
+    margin: 0 auto;
+    height: 250px;
+  }
+}
+
 .person__img.inview {
   -webkit-animation-name: kf-img-show;
           animation-name: kf-img-show;
-  -webkit-animation-duration: 1.6s;
-          animation-duration: 1.6s;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-delay: 0s;

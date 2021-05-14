@@ -385,6 +385,12 @@ header {
   border-radius: 10px;
   overflow: hidden;
 
+  @media screen and (min-width:600px){
+    width: 80%;
+    margin: 0 auto;
+    height: 250px;
+  }
+
     &.inview {
 
       img{
@@ -393,7 +399,7 @@ header {
     
       @include animation(
         $name: kf-img-show,
-        $duration: 1.6s,
+        $duration: .6s,
         $timing-function: ease-in-out,
         $fill-mode: none
       );
