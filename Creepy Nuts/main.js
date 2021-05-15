@@ -38,6 +38,8 @@ const callback = function (el, isIntersecting) {
 
 const so2 = new ScrollObserver('.person__img', callback);
 
+const so3 = new ScrollObserver('.emphasis', callback);
+
 
 
 
